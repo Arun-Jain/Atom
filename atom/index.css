@@ -42,14 +42,15 @@
 .cardscontain {
 	width:100%;
 	height:600px;
+	text-align: center;
 	background-color: rgb(24,40,65);
 }
 
-.cardscontain h2{
-	position: absolute;
+.cardscontain .mainheading{
+	position: relative;
 	z-index: 20;
 	top:120px;
-	left:330px;
+
 	font-size: 30px;
 	font-family: geometos;
 	color:white;
@@ -106,6 +107,9 @@
 	margin:auto;
 }
 
+h2.heading{
+	color: #fff;
+}
 /*end container and students images cards section */
 
 
