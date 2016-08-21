@@ -1,142 +1,232 @@
-/* navbar-styling */
-
-.links a{
-	color:white;
-	font-family: geometos;
-	font-size: 18px;
-	transition:all 0.5s ease-in-out;
-
+#myNavbar a{
+    color:white;
+    font-size:17px;
+    font-family:geometos;
+    transition:all 0.8s ease-in-out;
 }
 
-.links a:hover {
-	color:orange;
-	background-color: rgb(24,40,65);
-}
-
-.container-fluid{
-	height:70px;
-	padding-top: 10px;
-}
-
-.navbar-brand {
-	color:white;
-	font-family: geometos;
-	font-size: 24px;
-}
-
-.navbar-brand:hover {
+#myNavbar a:hover {
 	color:orange;
 }
 
-.nav > li > a:hover,
-.nav > li > a:focus {
-   text-decoration: none;
-   background-color: rgb(24,40,65); /*Change rollover cell color here*/
- }
+.navbar {
+	border:0;
+}
 
-
-/* end navbar-styling */
-
-
-/*container and students images cards section */
-.cardscontain {
-	width:100%;
+.backgroundpart {
 	height:600px;
-	text-align: center;
+	width: 100%;
 	background-color: rgb(24,40,65);
 }
 
-.cardscontain .mainheading{
+.navbar .navbar-brand{
+	font-size: 24px;
+	font-family: geometos;
+	color:white;
+}
+
+.imagesection img {
+	position: absolute;
+	z-index: 10;
+	max-width: 100%;
+	top: 10%;
+	left: 10%;
+	opacity:0.3;
+}
+
+
+img.ri:empty
+{
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+@media screen and (orientation: portrait) {
+  img.ri {
+      max-width: 90%;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  img.ri {
+      max-height: 90%;
+  }
+}
+
+.hero_heading h1{
+    color: white;
+    font-size: 24px;
+    font-family: geometos;
+    margin: 0 auto;
+    left:0px;
+    right:0px;
+    position: absolute;
+    z-index: 20;
+    top:100px;
+}
+
+@media (max-width: 480px) {
+    .hero_heading h1{
+    font-size:12px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .hero_heading h1{
+    font-size:16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .hero_heading h1{
+    font-size:20px;
+    }
+}
+
+@media (min-width: 980px) {
+  .hero_heading h1{
+  font-size:24px;
+  }
+}
+
+.stylish-input-group{
 	position: relative;
 	z-index: 20;
-	top:120px;
-
-	font-size: 30px;
-	font-family: geometos;
-	color:white;
+	top: 140px;
+	left: 0px;
+	right:0px;
+	margin:0 auto;
 }
 
-.bgimg img{
-	height:500px;
-	width:700px;
-	opacity:0.3;
-	position: absolute;
-	top:100px;
-	left:300px;
-	z-index:10;
+.stylish-input-group .input-group-addon{
+    background: rgb(80,94,119);
 }
-
-.cardscontain input {
-	position: absolute;
-	z-index: 20;
-	top:200px;
-	left:410px;
+.stylish-input-group .form-control{
+	color: white;
 	height:40px;
-	width:500px;
-	padding-left: 5px;
-	border-radius: 5px;
-	background-color: rgba(80,94,120,0.8);
-	color:white;
-	border:none;
+	background-color: rgb(80,94,119);
 }
 
-.cardscontain a {
-	position: absolute;
-	z-index: 20;
-	top:200px;
-	left:840px;
-	height: 40px;
-	width:70px;
-	opacity: 0.6;
+input.form-control {
+	border: 0px;
+	outline: none;
 }
 
-.cardscontain input:focus{
+
+.stylish-input-group button{
 	border:0px;
 	outline:none;
+    background: rgb(80,94,119);
 }
 
-.text {
-	width:100%;
-	position: absolute;
-	z-index: 20;
+.input-group-addon{
+	border:0px;
+	outline:none;
 	color:white;
+}
+
+.description p{
+    color: white;
+    font-size: 18px;
+    margin: 0 auto;
+    left:0px;
+    right:0px;
+    position: relative;
+    z-index: 20;
+    top:180px;
+}
+
+@media (max-width: 480px) {
+    .description p{
+    font-size:12px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .description p{
+    font-size:14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .description p{
+    font-size:18px;
+    }
+}
+
+@media (min-width: 980px) {
+  .description p{
+  font-size:18px;
+  }
+}
+
+.top-students h4 {
+	color: rgb(80,94,119);
+	text-decoration: underline;
+	position: relative;
+	z-index: 20;
+	top:220px;
+}
+
+.students-images {
+	position: relative;
+	top:220px;
+	z-index: 20;
+}
+
+.students-images img{
+	width:100%;
+	height:180px;
+	margin-top: 5px;
+}
+
+.students-images img:hover{
+	cursor: pointer;
+}
+
+
+.card-block h3{
+	text-align: center;
+	border:1px solid-black;
+	font-size:14px;
+}
+
+.card-block a{
+	color:black;
+	font-family: geometos;
 	font-size: 18px;
-	top:270px;
-	left:0px;
-	right:0px;
-	margin:auto;
 }
 
-h2.heading{
-	color: #fff;
+.card {
+	background-color: gray;
+	box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-/*end container and students images cards section */
+
+.body {
+	background-color: white;
+	height:500px;
+}
+
+.body h3 {
+	font-family: geometos;
+	text-decoration: underline;
+}
+
+.footer {
+	background-color: rgb(24,40,65);
+	height:50px;
+	padding-top: 15px;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.cell a{
+	color:white;
+	font-size: 15px;
+	font-style: helvetica;
+	padding-left: 10px;
+}
