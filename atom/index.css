@@ -60,7 +60,6 @@ body::-webkit-scrollbar-thumb {
 
 }
 
-
 img.ri:empty
 {
 	top: 50%;
@@ -99,18 +98,21 @@ img.ri:empty
 @media (max-width: 480px) {
     .hero_heading h1{
     font-size:12px;
+    margin-top: 80px;
     }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
     .hero_heading h1{
-    font-size:16px;
+    font-size:13px;
+    margin-top: 80px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
     .hero_heading h1{
     font-size:20px;
+    margin-top: 80px;
     }
 }
 
@@ -119,6 +121,7 @@ img.ri:empty
   font-size:24px;
   }
 }
+
 
 .stylish-input-group{
 	position: relative;
@@ -225,14 +228,15 @@ input.form-control {
 	height:500px;
 }
 
-.body h3 {
+.body h4 {
 	font-family: geometos;
 	text-decoration: underline;
+	text-align: center;
 }
 
 .footer {
 	background-color: rgb(24,40,65);
-	height:50px;
+	height:80px;
 	padding-top: 15px;
 }
 
@@ -331,3 +335,25 @@ input.form-control {
   }
 }
 
+.company-images img {
+	height:200px;
+	width:100%;
+	border-radius: 4px;
+	border:1px solid gray;
+	box-shadow: 5px 6px 16px 2px;
+	overflow-y:hidden;
+	margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+    .body {
+    height:700px;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .body{
+    	height:700px;
+    }
+}
